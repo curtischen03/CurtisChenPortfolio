@@ -19,6 +19,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import { Dock, DockIcon } from "@/components/ui/dock"
 
 export type IconProps = React.HTMLAttributes<SVGElement>
@@ -41,9 +42,9 @@ const Icons = {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-file-text-icon lucide-file-text"
       {...props}
     >
@@ -107,6 +108,18 @@ export function PersonalLinksDock() {
     <div className="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center">
       <TooltipProvider>
         <Dock direction="middle" iconMagnification={60} iconDistance={100}>
+          <DockIcon key="ThemeToggler">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div>
+                  <AnimatedThemeToggler className="px-3" />
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>Toggle dark/light mode</TooltipContent>
+            </Tooltip>
+          </DockIcon>
+          <Separator orientation="vertical" className="h-full" />
+
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
