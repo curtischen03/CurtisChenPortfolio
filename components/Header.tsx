@@ -60,7 +60,7 @@ export const Header = () => {
           </nav>
         </DialogContent>
       </Dialog>
-      <nav className="hidden text-sm text-muted-foreground sm:block">
+      <nav className="hidden text-sm sm:block">
         <ul className="flex gap-4">
           {links.map(({ name, hash }) => (
             <li key={name}>
