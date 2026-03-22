@@ -13,7 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Icons } from "@components/icons"
+import { Icons } from "@/components/icons"
 import { links } from "@/lib/data"
 
 export const Header = () => {
