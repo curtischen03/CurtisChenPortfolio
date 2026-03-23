@@ -3,6 +3,13 @@ import { Linkedin, Github, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
+import { AuroraText } from "@/components/ui/aurora-text"
+import { TypingAnimation } from "@/components/ui/typing-animation"
+
+export function Component() {
+  return <TypingAnimation>Hello World! 👋</TypingAnimation>
+}
+
 export function Home() {
   return (
     <div className="mt-30 flex flex-row justify-center gap-15 px-4">
@@ -14,16 +21,21 @@ export function Home() {
         className="flex grow flex-col justify-center gap-4 sm:max-w-120"
       >
         <div className="flex flex-col gap-3">
-          <h1 className="text-center font-sans text-3xl">My Name is</h1>
-          <h1 className="text-center font-sans text-7xl font-bold">
-            Curtis Chen.
+          <h1 className="text-center font-sans text-2xl sm:text-3xl">
+            My name is
           </h1>
-          <h1 className="text-center font-sans text-3xl">
+          <h1 className="text-center font-sans text-6xl font-bold sm:text-7xl">
+            <AuroraText>
+              <TypingAnimation>Curtis Chen.</TypingAnimation>
+            </AuroraText>
+          </h1>
+          <h1 className="text-center font-sans text-2xl sm:text-3xl">
             I am a{" "}
             <WordRotate
+              className="font-bold"
               words={[
                 "Fullstack Developer.",
-                "Machine Learning Enginner.",
+                "Machine Learning Engineer.",
                 "Software Engineer.",
               ]}
             />
