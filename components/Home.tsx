@@ -24,7 +24,7 @@ export function Home() {
           <h1 className="text-center font-sans text-2xl sm:text-3xl">
             My name is
           </h1>
-          <h1 className="text-center font-sans text-6xl font-bold sm:text-7xl">
+          <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <AuroraText>
               <TypingAnimation>Curtis Chen.</TypingAnimation>
             </AuroraText>
