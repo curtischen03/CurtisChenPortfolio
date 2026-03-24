@@ -32,7 +32,7 @@ export function Home() {
             />
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
-            I'm a{" "}
+            I am a{" "}
             <WordRotate
               className="font-bold"
               words={[
