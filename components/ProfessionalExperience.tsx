@@ -8,6 +8,9 @@ import {
 import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import { motion } from "framer-motion"
+import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
+import { ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function ProfessionalExperience() {
   const professionalExperience = [
@@ -19,6 +22,15 @@ export function ProfessionalExperience() {
 Translated 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
 Coordinated requirements with business analysts, designers, stakeholders, and backend developers via Jira.
 Built an in-house React component library and UI system for major features.`,
+      additional: (
+        <HeroVideoDialog
+          className="max-w-lg min-w-xs lg:mx-4"
+          animationStyle="from-center"
+          videoSrc="https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG"
+          thumbnailSrc="https://i9.ytimg.com/vi_webp/h1n7tztyCpw/maxresdefault.webp?v=69a2346b&sqp=CKyLic4G&rs=AOn4CLCcfNTXGG_s34XPy_Q0gsVjNF_nUw"
+          thumbnailAlt="Koios Job Video"
+        />
+      ),
     },
     {
       jobTitle: "Full Stack Developer",
@@ -28,6 +40,14 @@ Built an in-house React component library and UI system for major features.`,
 Implemented 10+ custom themed components by translating stakeholder vision into functional code.
 Designed a PostgreSQL database in Supabase to manage 30+ athlete profiles and real-time game results.
 Implemented efficient data fetching for the team's public-facing dashboard.`,
+      additional: (
+        <div>
+          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black lg:mx-4">
+            <ExternalLink />
+            Link to Website
+          </Button>
+        </div>
+      ),
     },
     {
       jobTitle: "Tutoring Chair",
@@ -87,8 +107,9 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
                     </h1>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-md h-fit sm:text-lg">
-                  {job.description}
+                <AccordionContent className="text-md flex h-fit flex-row flex-wrap items-center sm:text-lg lg:flex-nowrap lg:gap-5">
+                  <p className="text-justify">{job.description}</p>
+                  {job.additional}
                 </AccordionContent>
               </AccordionItem>
             ))}
