@@ -46,7 +46,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-center text-4xl font-bold">
+          <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <AuroraText>
               <TypingAnimation
                 words={["Work Experience"]}
@@ -75,15 +75,19 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
                 <AccordionTrigger className="w-full">
                   <div className="flex w-full flex-row items-end justify-between gap-4">
                     <div className="flex flex-col">
-                      <h1 className="text-xl font-bold">{job.jobTitle}</h1>
-                      <h1 className="text-muted-foreground">{job.company}</h1>
+                      <h1 className="text-xl font-bold sm:text-2xl">
+                        {job.jobTitle}
+                      </h1>
+                      <h1 className="text-md text-muted-foreground sm:text-lg">
+                        {job.company}
+                      </h1>
                     </div>
-                    <h1 className="text-sm font-medium whitespace-nowrap text-muted-foreground">
-                      {job.date}{" "}
+                    <h1 className="text-md font-medium whitespace-nowrap text-muted-foreground sm:text-lg">
+                      {job.date}
                     </h1>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="h-fit">
+                <AccordionContent className="text-md h-fit sm:text-lg">
                   {job.description}
                 </AccordionContent>
               </AccordionItem>
