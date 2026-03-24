@@ -11,6 +11,7 @@ import { motion } from "framer-motion"
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { RainbowButton } from "@/components/ui/rainbow-button"
 
 export function ProfessionalExperience() {
   const professionalExperience = [

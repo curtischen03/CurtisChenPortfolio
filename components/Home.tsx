@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
 import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
+import { RainbowButton } from "@/components/ui/rainbow-button"
 
 export function Home() {
   return (
@@ -31,7 +32,7 @@ export function Home() {
             />
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
-            I am a{" "}
+            I'm a{" "}
             <WordRotate
               className="font-bold"
               words={[
@@ -43,24 +44,24 @@ export function Home() {
           </h1>
         </div>
         <div className="flex flex-row justify-center gap-3">
-          <Button
+          <RainbowButton
             onClick={() => console.log("clicked")}
-            className="rounded-md border border-slate-300 bg-white text-black"
+            className="rounded-md border text-black"
           >
             <Linkedin />
-          </Button>
-          <Button
-            className="rounded-md border border-slate-300 bg-white text-black"
+          </RainbowButton>
+          <RainbowButton
+            className="rounded-md border text-black"
             onClick={() => console.log("clicked")}
           >
             <Github />
-          </Button>
+          </RainbowButton>
         </div>
         <div className="flex flex-row justify-center">
-          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black">
+          <RainbowButton className="rounded-md border text-black">
             <Download />
             Download Resume
-          </Button>
+          </RainbowButton>
         </div>
       </motion.div>
       {/* right */}
