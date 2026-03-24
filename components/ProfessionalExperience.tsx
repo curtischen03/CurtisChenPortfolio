@@ -67,18 +67,18 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
           viewport={{ once: true }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
-            <AuroraText>
-              <TypingAnimation
-                words={["Work Experience"]}
-                showCursor={true}
-                blinkCursor={true}
-                pauseDelay={2000}
-                cursorStyle="line"
-                auroraCursor={true}
-                typeSpeed={50}
-                loop
-              />
-            </AuroraText>
+            {/* <AuroraText> */}
+            <TypingAnimation
+              words={["Work Experience"]}
+              showCursor={true}
+              blinkCursor={true}
+              pauseDelay={2000}
+              cursorStyle="line"
+              auroraCursor={true}
+              typeSpeed={50}
+              loop
+            />
+            {/* </AuroraText> */}
           </h1>
         </motion.div>
         <Accordion type="single" collapsible className="max-w-5xl">

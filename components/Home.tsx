@@ -19,18 +19,18 @@ export function Home() {
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
-            <AuroraText>
-              <TypingAnimation
-                words={["Curtis Chen.", "Curtis."]}
-                showCursor={true}
-                blinkCursor={true}
-                pauseDelay={2000}
-                cursorStyle="line"
-                auroraCursor={true}
-                typeSpeed={50}
-                loop
-              />
-            </AuroraText>
+            {/* <AuroraText> */}
+            <TypingAnimation
+              words={["Curtis Chen.", "Curtis."]}
+              showCursor={true}
+              blinkCursor={true}
+              pauseDelay={2000}
+              cursorStyle="line"
+              auroraCursor={true}
+              typeSpeed={50}
+              loop
+            />
+            {/* </AuroraText> */}
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
             I am a{" "}
