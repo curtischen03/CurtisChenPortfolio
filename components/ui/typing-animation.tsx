@@ -1,5 +1,5 @@
 "use client"
-
+import { AuroraText } from "./aurora-text"
 import {
   useEffect,
   useMemo,
@@ -57,6 +57,7 @@ interface TypingAnimationProps extends Omit<MotionProps, "children"> {
   showCursor?: boolean
   blinkCursor?: boolean
   cursorStyle?: "line" | "block" | "underscore"
+  auroraCursor?: boolean
 }
 
 export function TypingAnimation({
@@ -74,6 +75,7 @@ export function TypingAnimation({
   showCursor = true,
   blinkCursor = true,
   cursorStyle = "line",
+  auroraCursor = false,
   ...props
 }: TypingAnimationProps) {
   const MotionComponent = motionElements[
@@ -226,9 +228,18 @@ export function TypingAnimation({
       {displayedText}
       {shouldShowCursor && (
         <span
-          className={cn("inline-block", blinkCursor && "animate-blink-cursor")}
+          className={cn(
+            "inline-block",
+            blinkCursor && "animate-blink-cursor",
+            "text-foreground"
+          )}
+          style={{ WebkitTextFillColor: "initial" }}
         >
-          {getCursorChar()}
+          {auroraCursor ? (
+            <AuroraText>{getCursorChar()}</AuroraText>
+          ) : (
+            <div>{getCursorChar()}</div>
+          )}
         </span>
       )}
     </MotionComponent>

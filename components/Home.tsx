@@ -6,13 +6,9 @@ import { WordRotate } from "@/components/ui/word-rotate"
 import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 
-export function Component() {
-  return <TypingAnimation>Hello World! 👋</TypingAnimation>
-}
-
 export function Home() {
   return (
-    <div className="mt-30 flex flex-row justify-center gap-15 px-4">
+    <div className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4">
       {/* left */}
       <motion.div
         initial={{ x: "-100vh", opacity: 0, scale: 0.5 }}
@@ -21,12 +17,19 @@ export function Home() {
         className="flex grow flex-col justify-center gap-4 sm:max-w-120"
       >
         <div className="flex flex-col gap-3">
-          <h1 className="text-center font-sans text-xl sm:text-3xl">
-            My name is
-          </h1>
+          <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <AuroraText>
-              <TypingAnimation>Curtis Chen.</TypingAnimation>
+              <TypingAnimation
+                words={["Curtis Chen.", "Curtis."]}
+                showCursor={true}
+                blinkCursor={true}
+                pauseDelay={2000}
+                cursorStyle="line"
+                auroraCursor={true}
+                typeSpeed={50}
+                loop
+              />
             </AuroraText>
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
