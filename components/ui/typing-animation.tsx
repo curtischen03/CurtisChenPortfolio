@@ -57,7 +57,7 @@ interface TypingAnimationProps extends Omit<MotionProps, "children"> {
   showCursor?: boolean
   blinkCursor?: boolean
   cursorStyle?: "line" | "block" | "underscore"
-  auroraCursor?: boolean
+  auroraText?: boolean
 }
 
 export function TypingAnimation({
@@ -75,7 +75,7 @@ export function TypingAnimation({
   showCursor = true,
   blinkCursor = true,
   cursorStyle = "line",
-  auroraCursor = false,
+  auroraText = false,
   ...props
 }: TypingAnimationProps) {
   const MotionComponent = motionElements[
@@ -225,7 +225,11 @@ export function TypingAnimation({
       )}
       {...props}
     >
-      {displayedText}
+      {auroraText ? (
+        <AuroraText>{displayedText}</AuroraText>
+      ) : (
+        <div>{displayedText}</div>
+      )}
       {shouldShowCursor && (
         <span
           className={cn(
@@ -235,7 +239,7 @@ export function TypingAnimation({
           )}
           style={{ WebkitTextFillColor: "initial" }}
         >
-          {auroraCursor ? (
+          {auroraText ? (
             <AuroraText>{getCursorChar()}</AuroraText>
           ) : (
             <div>{getCursorChar()}</div>

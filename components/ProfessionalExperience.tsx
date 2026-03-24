@@ -74,7 +74,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
               blinkCursor={true}
               pauseDelay={2000}
               cursorStyle="line"
-              auroraCursor={true}
+              auroraText={true}
               typeSpeed={50}
               loop
             />
