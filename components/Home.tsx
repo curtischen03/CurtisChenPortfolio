@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
 import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
-import { RainbowButton } from "@/components/ui/rainbow-button"
 
 export function Home() {
   return (
@@ -20,18 +19,16 @@ export function Home() {
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
-            {/* <AuroraText> */}
             <TypingAnimation
               words={["Curtis Chen.", "Curtis."]}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
               cursorStyle="line"
-              auroraCursor={true}
+              auroraText={true}
               typeSpeed={50}
               loop
             />
-            {/* </AuroraText> */}
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
             I am a{" "}
@@ -46,24 +43,24 @@ export function Home() {
           </h1>
         </div>
         <div className="flex flex-row justify-center gap-3">
-          <RainbowButton
+          <Button
             onClick={() => console.log("clicked")}
-            className="rounded-md border text-black"
+            className="rounded-md border border-slate-300 bg-white text-black"
           >
             <Linkedin />
-          </RainbowButton>
-          <RainbowButton
-            className="rounded-md border text-black"
+          </Button>
+          <Button
+            className="rounded-md border border-slate-300 bg-white text-black"
             onClick={() => console.log("clicked")}
           >
             <Github />
-          </RainbowButton>
+          </Button>
         </div>
         <div className="flex flex-row justify-center">
-          <RainbowButton className="rounded-md border text-black">
+          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black">
             <Download />
             Download Resume
-          </RainbowButton>
+          </Button>
         </div>
       </motion.div>
       {/* right */}
