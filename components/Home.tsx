@@ -21,7 +21,7 @@ export function Home() {
         className="flex grow flex-col justify-center gap-4 sm:max-w-120"
       >
         <div className="flex flex-col gap-3">
-          <h1 className="text-center font-sans text-2xl sm:text-3xl">
+          <h1 className="text-center font-sans text-xl sm:text-3xl">
             My name is
           </h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
@@ -29,7 +29,7 @@ export function Home() {
               <TypingAnimation>Curtis Chen.</TypingAnimation>
             </AuroraText>
           </h1>
-          <h1 className="text-center font-sans text-2xl sm:text-3xl">
+          <h1 className="text-center font-sans text-xl sm:text-3xl">
             I am a{" "}
             <WordRotate
               className="font-bold"
