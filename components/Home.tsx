@@ -5,10 +5,13 @@ import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
 import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
+import { LightRays } from "@/components/ui/light-rays"
 
 export function Home() {
   return (
     <div className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4">
+      <LightRays color="rgba(147, 197, 253, 0.3)" className="dark:hidden" />
+
       {/* left */}
       <motion.div
         initial={{ x: "-100vh", opacity: 0, scale: 0.5 }}
