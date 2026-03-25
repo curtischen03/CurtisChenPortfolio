@@ -6,9 +6,9 @@ import React, {
   useContext,
   useState,
 } from "react"
+import { links } from "@/components/Header"
 
-import type { SectionName } from "@/lib/types"
-
+type SectionName = (typeof links)[number]["name"]
 type TActiveSectionContext = {
   activeSection: SectionName
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>

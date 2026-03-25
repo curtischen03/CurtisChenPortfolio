@@ -12,26 +12,25 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ChevronDown } from "lucide-react"
-
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Education",
+    hash: "#education",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+]
 export const Header = () => {
-  const links = [
-    {
-      name: "Home",
-      hash: "#home",
-    },
-    {
-      name: "Experience",
-      hash: "#experience",
-    },
-    {
-      name: "Education",
-      hash: "#education",
-    },
-    {
-      name: "Skills",
-      hash: "#skills",
-    },
-  ]
   const [isOpen, setIsOpen] = useState(false)
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSection()
