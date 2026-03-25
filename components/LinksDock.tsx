@@ -14,17 +14,17 @@ const links = [
   {
     name: "GitHub",
     url: "https://github.com/curtischen03",
-    icon: <Github className="size-full" />,
+    icon: <Github className="sm:size-full" />,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/curtis-chen1/",
-    icon: <Linkedin className="size-full" />,
+    icon: <Linkedin className="sm:size-full" />,
   },
   {
     name: "Resume",
     url: "#",
-    icon: <FileText className="size-full" />,
+    icon: <FileText className="sm:size-full" />,
   },
 ]
 
@@ -35,9 +35,9 @@ export function LinksDock() {
         <Dock direction="middle" iconMagnification={60} iconDistance={100}>
           <DockIcon key="ThemeToggler">
             <Tooltip>
-              <TooltipTrigger asChild className="mx-2 size-full">
-                <div className="mt-2 size-full">
-                  <AnimatedThemeToggler className="size-full" />
+              <TooltipTrigger asChild className="sm:mx-2 sm:size-full">
+                <div className="sm:mt-2 sm:size-full">
+                  <AnimatedThemeToggler className="sm:size-full" />
                 </div>
               </TooltipTrigger>
               <TooltipContent>Toggle dark/light mode</TooltipContent>
@@ -48,7 +48,7 @@ export function LinksDock() {
           {links.map(({ name, url, icon }) => (
             <DockIcon key={name}>
               <Tooltip>
-                <TooltipTrigger asChild className="m-2 size-full">
+                <TooltipTrigger asChild className="sm:m-2 sm:size-full">
                   <a
                     href={url}
                     target="_blank"
