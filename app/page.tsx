@@ -3,6 +3,8 @@ import { Header } from "@/components/Header"
 import { PersonalLinksDock } from "@/components/PersonalLinksDock"
 import { Home } from "@/components/Home"
 import { ProfessionalExperience } from "@/components/ProfessionalExperience"
+import { Education } from "@/components/Education"
+import { Skills } from "@/components/Skills"
 
 export default function Page() {
   return (
@@ -10,6 +12,8 @@ export default function Page() {
       <Header />
       <Home />
       <ProfessionalExperience />
+      <Education />
+      {/* <Skills /> */}
       <PersonalLinksDock />
     </div>
   )

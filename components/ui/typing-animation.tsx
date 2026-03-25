@@ -228,7 +228,7 @@ export function TypingAnimation({
       {auroraText ? (
         <AuroraText>{displayedText}</AuroraText>
       ) : (
-        <div>{displayedText}</div>
+        <span>{displayedText}</span>
       )}
       {shouldShowCursor && (
         <span
@@ -242,7 +242,7 @@ export function TypingAnimation({
           {auroraText ? (
             <AuroraText>{getCursorChar()}</AuroraText>
           ) : (
-            <div>{getCursorChar()}</div>
+            <span>{getCursorChar()}</span>
           )}
         </span>
       )}

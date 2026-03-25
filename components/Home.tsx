@@ -3,15 +3,18 @@ import { Linkedin, Github, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
-import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
-import { LightRays } from "@/components/ui/light-rays"
 
 export function Home() {
+  const heroNameOptions = ["Curtis Chen.", "Curtis."]
+  const heroJobOptions = [
+    "Fullstack Developer.",
+    "Machine Learning Engineer.",
+    "Software Engineer.",
+  ]
+  const heroPictureSrc = "portfolioPicture.png"
   return (
     <div className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4">
-      <LightRays color="rgba(147, 197, 253, 0.3)" className="dark:hidden" />
-
       {/* left */}
       <motion.div
         initial={{ x: "-100vh", opacity: 0, scale: 0.5 }}
@@ -23,7 +26,7 @@ export function Home() {
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <TypingAnimation
-              words={["Curtis Chen.", "Curtis."]}
+              words={heroNameOptions}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -34,15 +37,8 @@ export function Home() {
             />
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
-            I am a{" "}
-            <WordRotate
-              className="font-bold"
-              words={[
-                "Fullstack Developer.",
-                "Machine Learning Engineer.",
-                "Software Engineer.",
-              ]}
-            />
+            I am a
+            <WordRotate className="font-bold" words={heroJobOptions} />
           </h1>
         </div>
         <div className="flex flex-row justify-center gap-3">
@@ -73,7 +69,7 @@ export function Home() {
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
         className="hidden max-w-100 grow sm:block"
       >
-        <img src="portfolioPicture.png" />
+        <img src={heroPictureSrc} />
       </motion.div>
     </div>
   )

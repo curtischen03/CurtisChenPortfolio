@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { AuroraText } from "@/components/ui/aurora-text"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import { motion } from "framer-motion"
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
@@ -22,15 +21,13 @@ export function ProfessionalExperience() {
 Translated 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
 Coordinated requirements with business analysts, designers, stakeholders, and backend developers via Jira.
 Built an in-house React component library and UI system for major features.`,
-      additional: (
-        <HeroVideoDialog
-          className="max-w-lg min-w-xs lg:mx-4"
-          animationStyle="from-center"
-          videoSrc="https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG"
-          thumbnailSrc="https://i9.ytimg.com/vi_webp/h1n7tztyCpw/maxresdefault.webp?v=69a2346b&sqp=CKyLic4G&rs=AOn4CLCcfNTXGG_s34XPy_Q0gsVjNF_nUw"
-          thumbnailAlt="Koios Job Video"
-        />
-      ),
+      youtubeVideo: {
+        videoSrc:
+          "https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG",
+        thumbnailSrc: "thumbnail.png",
+        thumbnailAlt: "Koios Job Video",
+      },
+      externalLink: "",
     },
     {
       jobTitle: "Full Stack Developer",
@@ -40,14 +37,7 @@ Built an in-house React component library and UI system for major features.`,
 Implemented 10+ custom themed components by translating stakeholder vision into functional code.
 Designed a PostgreSQL database in Supabase to manage 30+ athlete profiles and real-time game results.
 Implemented efficient data fetching for the team's public-facing dashboard.`,
-      additional: (
-        <div>
-          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black lg:mx-4">
-            <ExternalLink />
-            Link to Website
-          </Button>
-        </div>
-      ),
+      externalLink: "",
     },
     {
       jobTitle: "Tutoring Chair",
@@ -67,18 +57,16 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
           viewport={{ once: true }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
-            {/* <AuroraText> */}
             <TypingAnimation
               words={["Work Experience"]}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
               cursorStyle="line"
-              auroraText={true}
+              auroraText={false}
               typeSpeed={50}
               loop
             />
-            {/* </AuroraText> */}
           </h1>
         </motion.div>
         <Accordion type="single" collapsible className="max-w-5xl">
@@ -109,7 +97,23 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
                 </AccordionTrigger>
                 <AccordionContent className="text-md flex h-fit flex-row flex-wrap items-center sm:text-lg lg:flex-nowrap lg:gap-5">
                   <p className="text-justify">{job.description}</p>
-                  {job.additional}
+                  <div className="flex flex-col gap-4">
+                    {"externalLink" in job && (
+                      <Button className="w-fit rounded-md border border-slate-300 bg-white py-5 text-black lg:mx-4">
+                        <ExternalLink />
+                        Link to Website
+                      </Button>
+                    )}
+                    {job.youtubeVideo && (
+                      <HeroVideoDialog
+                        className="min-w-xs lg:mx-4 lg:max-w-lg"
+                        animationStyle="from-center"
+                        videoSrc={job.youtubeVideo.videoSrc}
+                        thumbnailSrc={job.youtubeVideo.thumbnailSrc}
+                        thumbnailAlt={job.youtubeVideo.thumbnailAlt}
+                      />
+                    )}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}
