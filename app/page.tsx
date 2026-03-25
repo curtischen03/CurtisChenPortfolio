@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button"
 import { Header } from "@/components/Header"
-import { PersonalLinksDock } from "@/components/PersonalLinksDock"
+import { LinksDock } from "@/components/LinksDock"
 import { Home } from "@/components/Home"
-import { ProfessionalExperience } from "@/components/ProfessionalExperience"
+import { Experience } from "@/components/Experience"
 import { Education } from "@/components/Education"
 import { Skills } from "@/components/Skills"
 
@@ -11,10 +10,10 @@ export default function Page() {
     <div>
       <Header />
       <Home />
-      <ProfessionalExperience />
+      <Experience />
       <Education />
       <Skills />
-      <PersonalLinksDock />
+      <LinksDock />
     </div>
   )
 }

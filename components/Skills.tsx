@@ -1,9 +1,32 @@
+"use client"
 import { Badge } from "@/components/ui/badge"
+import { motion } from "framer-motion"
+import { TypingAnimation } from "@/components/ui/typing-animation"
 
 export function Skills() {
   return (
-    <div className="min-h-[75vdh] pb-5">
-      <Badge variant="secondary">
+    <div id="skills" className="min-h-[75dvh] pb-5">
+      <motion.div
+        initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
+        whileInView={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 50, damping: 20 }}
+        viewport={{ once: true }}
+      >
+        <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
+          <TypingAnimation
+            words={["Skills"]}
+            showCursor={true}
+            blinkCursor={true}
+            pauseDelay={2000}
+            cursorStyle="line"
+            auroraText={false}
+            typeSpeed={50}
+            loop
+          />
+        </h1>
+      </motion.div>
+
+      {/* <Badge variant="secondary">
         <svg viewBox="0 0 128 128" className="start inline">
           <linearGradient
             id="python-original-a"
@@ -26,8 +49,8 @@ export function Skills() {
             y2="1149.537"
             gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
           >
-            <stop offset="0" stop-color="#FFD43B"></stop>
-            <stop offset="1" stop-color="#FFE873"></stop>
+            <stop offset="0" stopColor="#FFD43B"></stop>
+            <stop offset="1" stopColor="#FFE873"></stop>
           </linearGradient>
           <path
             fill="url(#python-original-a)"
@@ -57,7 +80,7 @@ export function Skills() {
           ></path>
         </svg>
         Python
-      </Badge>
+      </Badge> */}
     </div>
   )
 }

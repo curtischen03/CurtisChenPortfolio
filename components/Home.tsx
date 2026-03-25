@@ -14,7 +14,10 @@ export function Home() {
   ]
   const heroPictureSrc = "portfolioPicture.png"
   return (
-    <div className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4">
+    <div
+      id="home"
+      className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4"
+    >
       {/* left */}
       <motion.div
         initial={{ x: "-100vh", opacity: 0, scale: 0.5 }}

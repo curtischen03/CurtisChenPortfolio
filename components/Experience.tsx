@@ -11,8 +11,8 @@ import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export function ProfessionalExperience() {
-  const professionalExperience = [
+export function Experience() {
+  const experience = [
     {
       jobTitle: "Full Stack Developer",
       company: "Koios Enterprises, Calabasas, CA",
@@ -48,8 +48,11 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
     },
   ]
   return (
-    <div className="flex min-h-[75dvh] flex-row justify-center pb-5">
-      <div className="flex w-full flex-col items-center px-5 md:px-20">
+    <div
+      id="experience"
+      className="flex min-h-[75dvh] flex-row justify-center pb-5"
+    >
+      <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -58,7 +61,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
-              words={["Work Experience"]}
+              words={["Experience"]}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -78,7 +81,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
               once: true,
             }}
           >
-            {professionalExperience.map((job) => (
+            {experience.map((job) => (
               <AccordionItem value={job.company} key={job.company}>
                 <AccordionTrigger className="w-full">
                   <div className="flex w-full flex-row items-end justify-between gap-4">

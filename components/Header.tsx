@@ -1,10 +1,8 @@
 "use client"
-
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-
-import { useActiveSection } from "@/components/ActiveSectionProvider"
+import { useActiveSection } from "@/context/ActiveSectionProvider"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -13,10 +11,27 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Icons } from "@/components/icons"
-import { links } from "@/lib/data"
+import { ChevronDown } from "lucide-react"
 
 export const Header = () => {
+  const links = [
+    {
+      name: "Home",
+      hash: "#home",
+    },
+    {
+      name: "Experience",
+      hash: "#experience",
+    },
+    {
+      name: "Education",
+      hash: "#education",
+    },
+    {
+      name: "Skills",
+      hash: "#skills",
+    },
+  ]
   const [isOpen, setIsOpen] = useState(false)
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSection()
@@ -34,7 +49,7 @@ export const Header = () => {
             size="lg"
             className="bg-background/80 backdrop-blur-sm sm:hidden"
           >
-            Menu <Icons.chevronDown className="ml-2 size-4" />
+            Menu <ChevronDown className="ml-2 size-4" />
           </Button>
         </DialogTrigger>
         <DialogContent className="max-h-screen w-[90%] rounded text-muted-foreground">

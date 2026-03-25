@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/accordion"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import { motion } from "framer-motion"
-import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
 import { ExternalLink, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -48,8 +47,11 @@ export function Education() {
     },
   ]
   return (
-    <div className="flex min-h-[75dvh] flex-row justify-center pb-5">
-      <div className="flex w-full flex-col items-center px-5 md:px-20">
+    <div
+      id="education"
+      className="flex min-h-[75dvh] flex-row justify-center pb-5"
+    >
+      <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
