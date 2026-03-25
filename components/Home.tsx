@@ -6,7 +6,7 @@ import { WordRotate } from "@/components/ui/word-rotate"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 
 export function Home() {
-  const heroNameOptions = ["Curtis Chen.", "Curtis."]
+  const heroNameOptions = ["Curtis."]
   const heroJobOptions = [
     "Fullstack Developer.",
     "Machine Learning Engineer.",
