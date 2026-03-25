@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge"
 
 export function Skills() {
   return (
-    <div className="min-h-dvh bg-red-500">
+    <div className="min-h-[75vdh] pb-5">
       <Badge variant="secondary">
         <svg viewBox="0 0 128 128" className="start inline">
           <linearGradient
@@ -14,8 +14,8 @@ export function Skills() {
             y2="1151.089"
             gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
           >
-            <stop offset="0" stop-color="#5A9FD4"></stop>
-            <stop offset="1" stop-color="#306998"></stop>
+            <stop offset="0" stopColor="#5A9FD4"></stop>
+            <stop offset="1" stopColor="#306998"></stop>
           </linearGradient>
           <linearGradient
             id="python-original-b"

@@ -48,7 +48,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
     },
   ]
   return (
-    <div className="flex min-h-dvh flex-row justify-center">
+    <div className="flex min-h-[75dvh] flex-row justify-center pb-5">
       <div className="flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}

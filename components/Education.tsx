@@ -19,9 +19,7 @@ export function Education() {
       degree: "MEng, Artificial Intelligence",
       gpa: "4.0",
       date: "2025-2026",
-      coursework:
-        "Neural Networks, Natural Language Processing, Machine Learning Algorithms, Data Mining, Deep Learning, Business Analytics",
-      classes: [
+      coursework: [
         "Neural Networks",
         "Natural Language Processing",
         "Machine Learning Algorithms",
@@ -36,9 +34,7 @@ export function Education() {
       degree: "BS, Computer Science",
       gpa: "3.87",
       date: "2021-2025",
-      coursework:
-        "Algorithms, Data Structures, Software Construction, Computer Architecture, Operating Systems, Machine Learning, Data Science, Computer Vision",
-      classes: [
+      coursework: [
         "Algorithms",
         "Data Structures",
         "Software Construction",
@@ -52,7 +48,7 @@ export function Education() {
     },
   ]
   return (
-    <div className="flex min-h-dvh flex-row justify-center">
+    <div className="flex min-h-[75dvh] flex-row justify-center pb-5">
       <div className="flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
@@ -100,14 +96,13 @@ export function Education() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-md h-fit sm:text-lg">
-                  {/* <p className="text-justify">{school.coursework}</p> */}
                   <h1 className="text-md sm:text:lg mb-5 flex flex-row gap-3 font-semibold">
                     <BookOpen /> Relevant Coursework:
                   </h1>
                   <div className="items- justistartfy-between flex flex-row flex-wrap gap-5 lg:flex-nowrap">
-                    {school.classes && (
+                    {school.coursework && (
                       <div className="flex flex-row flex-wrap gap-3">
-                        {school.classes.map((course) => (
+                        {school.coursework.map((course) => (
                           <Badge
                             variant="secondary"
                             className="text-md px-3 py-4 sm:text-lg"

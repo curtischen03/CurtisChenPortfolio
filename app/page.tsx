@@ -13,7 +13,7 @@ export default function Page() {
       <Home />
       <ProfessionalExperience />
       <Education />
-      {/* <Skills /> */}
+      <Skills />
       <PersonalLinksDock />
     </div>
   )
