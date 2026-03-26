@@ -56,7 +56,7 @@ export function Education() {
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
@@ -77,7 +77,7 @@ export function Education() {
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 50, damping: 25 }}
             viewport={{
-              once: true,
+              once: false,
             }}
           >
             {educationSection.map((school) => (
