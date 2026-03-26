@@ -225,16 +225,24 @@ export function Skills() {
             />
           </h1>
         </motion.div>
-        <div className="flex flex-col gap-12">
+        <motion.div
+          initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 50, damping: 25 }}
+          viewport={{
+            once: true,
+          }}
+          className="flex flex-col gap-12"
+        >
           {skillsSection.map(({ type, skills }) => (
             <div className="flex flex-col gap-5" key={type}>
               <h1 className="text-xl font-bold sm:text-2xl">{type}</h1>
-              <div className="flex flex-row flex-wrap gap-4">
+              <div className="flex flex-row flex-wrap gap-4 lg:gap-6">
                 {skills.map((skill) => (
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="text-md flex items-center justify-center px-4 py-5 sm:text-lg"
+                    className="text-md flex items-center justify-center px-4 py-5 sm:text-lg lg:px-5 lg:py-6"
                   >
                     {skill in skillsIcons ? skillsIcons[skill] : null}
                     {skill}
@@ -243,7 +251,7 @@ export function Skills() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   )
