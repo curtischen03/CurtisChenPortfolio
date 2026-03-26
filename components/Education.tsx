@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
 export function Education() {
-  const education = [
+  const educationSection = [
     {
       name: "University of California, Los Angeles",
       degree: "MEng, Artificial Intelligence",
@@ -80,7 +80,7 @@ export function Education() {
               once: true,
             }}
           >
-            {education.map((school) => (
+            {educationSection.map((school) => (
               <AccordionItem value={school.degree} key={school.degree}>
                 <AccordionTrigger className="w-full">
                   <div className="flex w-full flex-row items-end justify-between gap-4">

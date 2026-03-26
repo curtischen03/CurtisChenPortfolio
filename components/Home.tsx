@@ -6,13 +6,13 @@ import { WordRotate } from "@/components/ui/word-rotate"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 
 export function Home() {
-  const heroNameOptions = ["Curtis."]
-  const heroJobOptions = [
+  const homeNameOptions = ["Curtis."]
+  const homeJobOptions = [
     "Fullstack Developer.",
     "Machine Learning Engineer.",
     "Software Engineer.",
   ]
-  const heroPictureSrc = "portfolioPicture.png"
+  const homePictureSrc = "portfolioPicture.png"
   return (
     <div
       id="home"
@@ -29,7 +29,7 @@ export function Home() {
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <TypingAnimation
-              words={heroNameOptions}
+              words={homeNameOptions}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -41,7 +41,7 @@ export function Home() {
           </h1>
           <h1 className="text-center font-sans text-xl sm:text-3xl">
             I am a
-            <WordRotate className="font-bold" words={heroJobOptions} />
+            <WordRotate className="font-bold" words={homeJobOptions} />
           </h1>
         </div>
         <div className="flex flex-row justify-center gap-3">
@@ -72,7 +72,7 @@ export function Home() {
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
         className="hidden max-w-100 grow sm:block"
       >
-        <img src={heroPictureSrc} />
+        <img src={homePictureSrc} />
       </motion.div>
     </div>
   )

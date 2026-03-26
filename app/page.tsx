@@ -14,6 +14,7 @@ export default function Page() {
       <Education />
       <Skills />
       <LinksDock />
+      <div className="min-h-[75dvh] bg-red-500"></div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Experience() {
-  const experience = [
+  const experienceSection = [
     {
       jobTitle: "Full Stack Developer",
       company: "Koios Enterprises, Calabasas, CA",
@@ -81,7 +81,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
               once: true,
             }}
           >
-            {experience.map((job) => (
+            {experienceSection.map((job) => (
               <AccordionItem value={job.company} key={job.company}>
                 <AccordionTrigger className="w-full">
                   <div className="flex w-full flex-row items-end justify-between gap-4">
