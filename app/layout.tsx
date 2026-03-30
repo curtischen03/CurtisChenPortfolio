@@ -25,7 +25,8 @@ export default function RootLayout({
         "antialiased",
         fontMono.variable,
         "font-sans",
-        geist.variable
+        geist.variable,
+        "scroll-smooth"
       )}
     >
       <head>
