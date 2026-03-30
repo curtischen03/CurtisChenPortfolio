@@ -13,6 +13,9 @@ export function Home() {
     "Software Engineer.",
   ]
   const homePictureSrc = "portfolioPicture.png"
+  const homeGithubSrc = "https://github.com/curtischen03"
+  const homeLinkedinSrc = "https://www.linkedin.com/in/curtis-chen1/"
+  const homeResumeSrc = "/resume.pdf"
   return (
     <div
       id="home"
@@ -45,23 +48,39 @@ export function Home() {
           </h1>
         </div>
         <div className="flex flex-row justify-center gap-3">
-          <Button
-            onClick={() => console.log("clicked")}
-            className="rounded-md border border-slate-300 bg-white text-black"
-          >
-            <Linkedin />
+          <Button className="rounded-md border border-slate-300 bg-white text-black transition-transform duration-200 hover:scale-110 active:scale-95">
+            <a
+              href={homeLinkedinSrc}
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin />
+            </a>
           </Button>
-          <Button
-            className="rounded-md border border-slate-300 bg-white text-black"
-            onClick={() => console.log("clicked")}
-          >
-            <Github />
+          <Button className="rounded-md border border-slate-300 bg-white text-black transition-transform duration-200 hover:scale-110 active:scale-95">
+            <a
+              href={homeGithubSrc}
+              aria-label="Github"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Github />
+            </a>
           </Button>
         </div>
         <div className="flex flex-row justify-center">
-          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black">
-            <Download />
-            Download Resume
+          <Button className="rounded-md border border-slate-300 bg-white py-5 text-black transition-transform duration-200 hover:scale-110 active:scale-95">
+            <a
+              href={homeResumeSrc}
+              aria-label="Resume"
+              target="_blank"
+              rel="noreferrer"
+              className="start inline"
+            >
+              <Download className="start mr-2 inline" />
+              Download Resume
+            </a>
           </Button>
         </div>
       </motion.div>

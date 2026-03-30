@@ -10,6 +10,7 @@ import { motion } from "framer-motion"
 import { ExternalLink, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { WebsiteLinkButton } from "@/components/ui/website-link-button"
 
 export function Education() {
   const educationSection = [
@@ -26,7 +27,10 @@ export function Education() {
         "Deep Learning",
         "Business Analytics",
       ],
-      externalLink: "",
+      externalLink: {
+        src: "https://www.meng.ucla.edu/",
+        label: "UCLA MEng Program",
+      },
     },
     {
       name: "University of California, Los Angeles",
@@ -43,24 +47,25 @@ export function Education() {
         "Data Science",
         "Computer Vision",
       ],
-      externalLink: "",
+      externalLink: {
+        src: "https://www.cs.ucla.edu/",
+        label: "UCLA CS Department",
+      },
     },
   ]
+  const educationTitleOptions = ["Education"]
   return (
-    <div
-      id="education"
-      className="flex min-h-[75dvh] flex-row justify-center pb-5"
-    >
+    <div id="education" className="flex flex-row justify-center pb-20 sm:pb-35">
       <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
-              words={["Education"]}
+              words={educationTitleOptions}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -77,7 +82,7 @@ export function Education() {
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 50, damping: 25 }}
             viewport={{
-              once: false,
+              once: true,
             }}
           >
             {educationSection.map((school) => (
@@ -115,10 +120,10 @@ export function Education() {
                       </div>
                     )}
                     {"externalLink" in school && (
-                      <Button className="w-fit rounded-md border border-slate-300 bg-white py-5 text-black lg:mx-4">
-                        <ExternalLink />
-                        Link to Website
-                      </Button>
+                      <WebsiteLinkButton
+                        href={school.externalLink.src}
+                        label={school.externalLink.label}
+                      />
                     )}
                   </div>
                 </AccordionContent>

@@ -10,7 +10,7 @@ import {
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import { Dock, DockIcon } from "@/components/ui/dock"
 
-const links = [
+const linksDockSection = [
   {
     name: "GitHub",
     url: "https://github.com/curtischen03",
@@ -23,7 +23,7 @@ const links = [
   },
   {
     name: "Resume",
-    url: "#",
+    url: "/resume.pdf",
     icon: <FileText className="sm:size-full" />,
   },
 ]
@@ -45,7 +45,7 @@ export function LinksDock() {
           </DockIcon>
           <Separator orientation="vertical" className="h-full" />
 
-          {links.map(({ name, url, icon }) => (
+          {linksDockSection.map(({ name, url, icon }) => (
             <DockIcon key={name}>
               <Tooltip>
                 <TooltipTrigger asChild className="sm:m-2 sm:size-full">

@@ -16,6 +16,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const tabName = "Curtis Chen"
+  const tabIconSrc = "portfolioLogo.png"
   return (
     <html
       lang="en"
@@ -27,6 +29,10 @@ export default function RootLayout({
         geist.variable
       )}
     >
+      <head>
+        <title>{tabName}</title>
+        <link rel="icon" type="image/x-icon" href={tabIconSrc} />
+      </head>
       <body>
         <ThemeProvider>
           <ActiveSectionProvider>{children}</ActiveSectionProvider>

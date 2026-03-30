@@ -10,6 +10,7 @@ import { motion } from "framer-motion"
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { WebsiteLinkButton } from "./ui/website-link-button"
 
 export function Experience() {
   const experienceSection = [
@@ -27,17 +28,19 @@ Built an in-house React component library and UI system for major features.`,
         thumbnailSrc: "thumbnail.png",
         thumbnailAlt: "Koios Job Video",
       },
-      externalLink: "",
     },
     {
       jobTitle: "Full Stack Developer",
-      company: "UC Berkeley Athletics, Berkeley, CA",
+      company: "UC Berkeley Water Polo, Berkeley, CA",
       date: "Nov 2025 – Present",
       description: `Developed mobile responsive pages using Mantine UI, React, and Next.js with Typescript.
 Implemented 10+ custom themed components by translating stakeholder vision into functional code.
 Designed a PostgreSQL database in Supabase to manage 30+ athlete profiles and real-time game results.
 Implemented efficient data fetching for the team's public-facing dashboard.`,
-      externalLink: "",
+      externalLink: {
+        src: "https://berkeleywpc.com/",
+        label: "UC Berkeley Water Polo Club Website",
+      },
     },
     {
       jobTitle: "Tutoring Chair",
@@ -47,21 +50,22 @@ Implemented efficient data fetching for the team's public-facing dashboard.`,
 Mentored 50+ students individually, improving average grades by 10% in core CS courses.`,
     },
   ]
+  const experienceTitleOptions = ["Experience"]
   return (
     <div
       id="experience"
-      className="flex min-h-[75dvh] flex-row justify-center pb-5"
+      className="flex flex-row justify-center pb-20 sm:pb-35"
     >
       <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
-              words={["Experience"]}
+              words={experienceTitleOptions}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -78,7 +82,7 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 50, damping: 25 }}
             viewport={{
-              once: false,
+              once: true,
             }}
           >
             {experienceSection.map((job) => (
@@ -101,11 +105,11 @@ Mentored 50+ students individually, improving average grades by 10% in core CS c
                 <AccordionContent className="text-md flex h-fit flex-row flex-wrap items-center sm:text-lg lg:flex-nowrap lg:gap-5">
                   <p className="text-justify">{job.description}</p>
                   <div className="flex flex-col gap-4">
-                    {"externalLink" in job && (
-                      <Button className="w-fit rounded-md border border-slate-300 bg-white py-5 text-black lg:mx-4">
-                        <ExternalLink />
-                        Link to Website
-                      </Button>
+                    {job.externalLink && (
+                      <WebsiteLinkButton
+                        href={job.externalLink.src}
+                        label={job.externalLink.label}
+                      />
                     )}
                     {job.youtubeVideo && (
                       <HeroVideoDialog

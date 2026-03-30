@@ -29,6 +29,8 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
+  { name: "Projects", hash: "#projects" },
+  { name: "Contact", hash: "#contact" },
 ]
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)

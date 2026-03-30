@@ -200,21 +200,19 @@ export function Skills() {
       />
     ),
   }
+  const skillTitleOptions = ["Skills"]
   return (
-    <div
-      id="skills"
-      className="flex min-h-[75dvh] flex-row justify-center pb-5"
-    >
+    <div id="skills" className="flex flex-row justify-center pb-20 sm:pb-35">
       <div className="mt-20 w-full max-w-5xl px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
-              words={["Skills"]}
+              words={skillTitleOptions}
               showCursor={true}
               blinkCursor={true}
               pauseDelay={2000}
@@ -226,11 +224,11 @@ export function Skills() {
           </h1>
         </motion.div>
         <motion.div
-          initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
+          initial={{ x: "-25vh", opacity: 0, scale: 0.75 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ type: "spring", stiffness: 50, damping: 25 }}
+          transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{
-            once: false,
+            once: true,
           }}
           className="flex flex-col gap-12"
         >
