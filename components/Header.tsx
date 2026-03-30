@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import Link from "next/link"
 import { useActiveSection } from "@/context/ActiveSectionProvider"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,26 +11,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ChevronDown } from "lucide-react"
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Education",
-    hash: "#education",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  { name: "Projects", hash: "#projects" },
-  { name: "Contact", hash: "#contact" },
-]
+import { headerLinks } from "@/data/resume"
+import Link from "next/link"
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -61,7 +42,7 @@ export const Header = () => {
           </DialogHeader>
           <nav>
             <ul>
-              {links.map(({ name, hash }) => (
+              {headerLinks.map(({ name, hash }) => (
                 <li
                   onClick={() => setIsOpen(false)}
                   key={name}
@@ -78,7 +59,7 @@ export const Header = () => {
       </Dialog>
       <nav className="hidden text-sm sm:block">
         <ul className="flex gap-4">
-          {links.map(({ name, hash }) => (
+          {headerLinks.map(({ name, hash }) => (
             <li key={name}>
               <Link
                 href={hash}

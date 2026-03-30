@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "@/context/ThemeProvider"
 import { cn } from "@/lib/utils"
 import { ActiveSectionProvider } from "@/context/ActiveSectionProvider"
+import { tabName, tabIconSrc } from "@/data/resume"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -16,8 +17,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const tabName = "Curtis Chen"
-  const tabIconSrc = "portfolioLogo.png"
   return (
     <html
       lang="en"

@@ -8,49 +8,10 @@ import {
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import { motion } from "framer-motion"
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog"
-import { ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { WebsiteLinkButton } from "./ui/website-link-button"
+import { experienceSection, experienceTitleOptions } from "@/data/resume"
 
 export function Experience() {
-  const experienceSection = [
-    {
-      jobTitle: "Full Stack Developer",
-      company: "Koios Enterprises, Calabasas, CA",
-      date: "Oct 2025 – Present",
-      description: `Integrated backend services with frontend using Typescript and React to deliver 3+ microservices, including social media, vendor application, and user settings.
-Translated 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
-Coordinated requirements with business analysts, designers, stakeholders, and backend developers via Jira.
-Built an in-house React component library and UI system for major features.`,
-      youtubeVideo: {
-        videoSrc:
-          "https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG",
-        thumbnailSrc: "thumbnail.png",
-        thumbnailAlt: "Koios Job Video",
-      },
-    },
-    {
-      jobTitle: "Full Stack Developer",
-      company: "UC Berkeley Water Polo, Berkeley, CA",
-      date: "Nov 2025 – Present",
-      description: `Developed mobile responsive pages using Mantine UI, React, and Next.js with Typescript.
-Implemented 10+ custom themed components by translating stakeholder vision into functional code.
-Designed a PostgreSQL database in Supabase to manage 30+ athlete profiles and real-time game results.
-Implemented efficient data fetching for the team's public-facing dashboard.`,
-      externalLink: {
-        src: "https://berkeleywpc.com/",
-        label: "UC Berkeley Water Polo Club Website",
-      },
-    },
-    {
-      jobTitle: "Tutoring Chair",
-      company: "UCLA Computer Science Department, Los Angeles, CA",
-      date: "Sep 2022 – Sep 2025",
-      description: `Led 200+ student review sessions for data structures, algorithms, machine learning, AI, and databases.
-Mentored 50+ students individually, improving average grades by 10% in core CS courses.`,
-    },
-  ]
-  const experienceTitleOptions = ["Experience"]
   return (
     <div
       id="experience"

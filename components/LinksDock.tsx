@@ -1,5 +1,4 @@
 "use client"
-import { Linkedin, Github, FileText } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import {
   Tooltip,
@@ -9,24 +8,7 @@ import {
 } from "@/components/ui/tooltip"
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import { Dock, DockIcon } from "@/components/ui/dock"
-
-const linksDockSection = [
-  {
-    name: "GitHub",
-    url: "https://github.com/curtischen03",
-    icon: <Github className="sm:size-full" />,
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/curtis-chen1/",
-    icon: <Linkedin className="sm:size-full" />,
-  },
-  {
-    name: "Resume",
-    url: "/resume.pdf",
-    icon: <FileText className="sm:size-full" />,
-  },
-]
+import { linksDockSection } from "@/data/resume"
 
 export function LinksDock() {
   return (

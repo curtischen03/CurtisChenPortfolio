@@ -1,29 +1,11 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Globe } from "lucide-react"
-
-const footerLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
-]
-
-const footerSocialLinks = [
-  {
-    href: "https://www.linkedin.com/in/curtis-chen1/",
-    label: "Linkedin",
-    icon: <Linkedin />,
-  },
-  {
-    href: "https://github.com/curtischen03",
-    label: "Github",
-    icon: <Github />,
-  },
-]
-const footerName = "Curtis Chen"
-const footerGithub = "https://github.com/curtischen03"
+import { Globe } from "lucide-react"
+import {
+  footerLinks,
+  footerSocialLinks,
+  footerName,
+  footerGithub,
+} from "@/data/resume"
 
 export function Footer() {
   return (

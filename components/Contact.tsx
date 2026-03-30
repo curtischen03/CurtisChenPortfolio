@@ -1,10 +1,12 @@
 import { motion } from "framer-motion"
 import { TypingAnimation } from "./ui/typing-animation"
 import { Mail, Phone } from "lucide-react"
+import {
+  contactEmail,
+  contactPhoneNumber,
+  contactTitleOptions,
+} from "@/data/resume"
 export function Contact() {
-  const contactEmail = "curtischen1234@gmail.com"
-  const contactPhoneNumber = "+1 (626) 321 0852"
-  const contactTitleOptions = ["Contact Me"]
   return (
     <div id="contact" className="flex flex-row justify-center pb-20 sm:pb-35">
       <div className="mt-20 w-full max-w-5xl px-5 md:px-20">

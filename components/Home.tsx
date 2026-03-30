@@ -4,18 +4,16 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { WordRotate } from "@/components/ui/word-rotate"
 import { TypingAnimation } from "@/components/ui/typing-animation"
+import {
+  homeNameOptions,
+  homeJobOptions,
+  homePictureSrc,
+  homeGithubSrc,
+  homeLinkedinSrc,
+  homeResumeSrc,
+} from "@/data/resume"
 
 export function Home() {
-  const homeNameOptions = ["Curtis."]
-  const homeJobOptions = [
-    "Fullstack Developer.",
-    "Machine Learning Engineer.",
-    "Software Engineer.",
-  ]
-  const homePictureSrc = "portfolioPicture.png"
-  const homeGithubSrc = "https://github.com/curtischen03"
-  const homeLinkedinSrc = "https://www.linkedin.com/in/curtis-chen1/"
-  const homeResumeSrc = "/resume.pdf"
   return (
     <div
       id="home"
