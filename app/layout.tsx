@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "@/context/ThemeProvider"
 import { cn } from "@/lib/utils"
 import { ActiveSectionProvider } from "@/context/ActiveSectionProvider"
-import { tabName, tabIconSrc } from "@/data/resume"
+import { tabName, tabIconSrc, metaDescription } from "@/data/resume"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -30,11 +30,8 @@ export default function RootLayout({
       )}
     >
       <head>
-        <title>{tabName} | Full Stack Developer</title>
-        <meta
-          name="description"
-          content="Portfolio of Curtis Chen, a Fullstack Developer and Machine Learning Engineer. View my latest work."
-        />
+        <title>{`${tabName} | Full Stack Developer`}</title>
+        <meta name="description" content={metaDescription} />
         <link rel="icon" type="image/x-icon" href={tabIconSrc} />
       </head>
       <body>

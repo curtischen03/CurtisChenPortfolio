@@ -2,6 +2,8 @@ import { Github, Globe, Linkedin, FileText } from "lucide-react"
 
 export const tabName = "Curtis Chen"
 export const tabIconSrc = "portfolioLogo.png"
+export const metaDescription =
+  "Portfolio of Curtis Chen, a Fullstack Developer and Machine Learning Engineer. View my latest work."
 export const headerLinks = [
   {
     name: "Home",
@@ -392,7 +394,7 @@ export const projectSection = [
       "Next.js",
       "TailwindCSS",
       "ShadCn",
-      "MagicUI",
+      "Framer Motion",
     ],
     image: "personalportfolio.png",
     links: [
