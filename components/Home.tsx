@@ -17,7 +17,7 @@ export function Home() {
   return (
     <div
       id="home"
-      className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4"
+      className="flex min-h-dvh flex-row items-center justify-center gap-15 bg-gray-100 px-4 dark:bg-gray-900"
     >
       {/* left */}
       <motion.div

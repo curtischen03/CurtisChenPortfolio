@@ -5,7 +5,10 @@ import { projectSection, projectTitleOptions } from "@/data/resume"
 
 export function Projects() {
   return (
-    <div id="projects" className="flex flex-row justify-center pb-20 sm:pb-35">
+    <div
+      id="projects"
+      className="flex flex-row justify-center bg-gray-50 pb-20 sm:pb-35 dark:bg-gray-900"
+    >
       <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}

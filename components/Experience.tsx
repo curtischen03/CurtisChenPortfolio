@@ -15,7 +15,7 @@ export function Experience() {
   return (
     <div
       id="experience"
-      className="flex flex-row justify-center pb-20 sm:pb-35"
+      className="dark:bg-gray-[850] bg-gray-[150] flex flex-row justify-center pb-20 sm:pb-35"
     >
       <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
