@@ -72,6 +72,7 @@ export function Education() {
                           <Badge
                             variant="secondary"
                             className="text-md px-3 py-4 sm:text-lg"
+                            key={course}
                           >
                             {course}
                           </Badge>

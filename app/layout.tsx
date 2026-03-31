@@ -30,7 +30,11 @@ export default function RootLayout({
       )}
     >
       <head>
-        <title>{tabName}</title>
+        <title>{tabName} | Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Portfolio of Curtis Chen, a Fullstack Developer and Machine Learning Engineer. View my latest work."
+        />
         <link rel="icon" type="image/x-icon" href={tabIconSrc} />
       </head>
       <body>

@@ -7,7 +7,7 @@ import { TypingAnimation } from "@/components/ui/typing-animation"
 import {
   homeNameOptions,
   homeJobOptions,
-  homePictureSrc,
+  homePicture,
   homeGithubSrc,
   homeLinkedinSrc,
   homeResumeSrc,
@@ -28,7 +28,7 @@ export function Home() {
       >
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
-          <p className="text-center font-sans text-5xl font-bold sm:text-7xl">
+          <h2 className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <TypingAnimation
               words={homeNameOptions}
               showCursor={true}
@@ -39,11 +39,11 @@ export function Home() {
               typeSpeed={50}
               loop
             />
-          </p>
-          <p className="text-center font-sans text-xl sm:text-3xl">
+          </h2>
+          <h2 className="text-center font-sans text-xl sm:text-3xl">
             I am a
             <WordRotate className="font-bold" words={homeJobOptions} />
-          </p>
+          </h2>
         </div>
         <div className="flex flex-row justify-center gap-3">
           <Button className="rounded-md border border-slate-300 bg-white text-black transition-transform duration-200 hover:scale-110 active:scale-95">
@@ -89,7 +89,7 @@ export function Home() {
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
         className="hidden max-w-100 grow sm:block"
       >
-        <img src={homePictureSrc} />
+        <img src={homePicture.src} alt={homePicture.alt} />
       </motion.div>
     </div>
   )

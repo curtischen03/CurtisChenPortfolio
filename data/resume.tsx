@@ -29,7 +29,10 @@ export const homeJobOptions = [
   "Machine Learning Engineer.",
   "Software Engineer.",
 ]
-export const homePictureSrc = "portfolioPicture.png"
+export const homePicture = {
+  src: "portfolioPicture.png",
+  alt: "Curtis Chen Portfolio Picture",
+}
 export const homeGithubSrc = "https://github.com/curtischen03"
 export const homeLinkedinSrc = "https://www.linkedin.com/in/curtis-chen1/"
 export const homeResumeSrc = "/resume.pdf"
