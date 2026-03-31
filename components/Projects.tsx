@@ -6,7 +6,7 @@ import { projectSection, projectTitleOptions } from "@/data/resume"
 export function Projects() {
   return (
     <div id="projects" className="flex flex-row justify-center pb-20 sm:pb-35">
-      <div className="mt-20 w-full max-w-6xl px-5 md:px-20">
+      <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -31,7 +31,7 @@ export function Projects() {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 60, damping: 25 }}
           viewport={{ once: true }}
-          className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2"
+          className="grid max-w-5xl auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2"
         >
           {projectSection.map(
             ({ href, title, description, dates, tags, image, links }) => (

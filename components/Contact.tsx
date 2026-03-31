@@ -9,7 +9,7 @@ import {
 export function Contact() {
   return (
     <div id="contact" className="flex flex-row justify-center pb-20 sm:pb-35">
-      <div className="mt-20 w-full max-w-5xl px-5 md:px-20">
+      <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -34,6 +34,7 @@ export function Contact() {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 50, damping: 25 }}
           viewport={{ once: true }}
+          className="w-full max-w-5xl"
         >
           <p className="pb-8 text-left text-xl font-bold sm:text-2xl">
             Get in Touch

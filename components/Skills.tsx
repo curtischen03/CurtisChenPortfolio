@@ -7,7 +7,7 @@ import { skillsSection, skillsIcons, skillTitleOptions } from "@/data/resume"
 export function Skills() {
   return (
     <div id="skills" className="flex flex-row justify-center pb-20 sm:pb-35">
-      <div className="mt-20 w-full max-w-5xl px-5 md:px-20">
+      <div className="mt-20 flex w-full flex-col items-center px-5 md:px-20">
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -34,7 +34,7 @@ export function Skills() {
           viewport={{
             once: true,
           }}
-          className="flex flex-col gap-12"
+          className="flex max-w-5xl flex-col gap-12"
         >
           {skillsSection.map(({ type, skills }) => (
             <div className="flex flex-col gap-5" key={type}>
