@@ -16,7 +16,7 @@ export function Contact() {
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
+          <h2 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
               words={contactTitleOptions}
               showCursor={true}
@@ -27,7 +27,7 @@ export function Contact() {
               typeSpeed={50}
               loop
             />
-          </h1>
+          </h2>
         </motion.div>
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.5 }}
@@ -35,19 +35,19 @@ export function Contact() {
           transition={{ type: "spring", stiffness: 50, damping: 25 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-left text-xl font-bold sm:text-2xl">
+          <p className="pb-8 text-left text-xl font-bold sm:text-2xl">
             Get in Touch
-          </h1>
-          <h1 className="text-md sm:text-l pb-2 text-left font-bold">
+          </p>
+          <h3 className="text-md sm:text-l pb-2 text-left font-bold">
             <Mail className="start mr-4 inline" />
             Email
-          </h1>
-          <h1 className="mb-5">{contactEmail}</h1>
-          <h1 className="text-md pb-2 text-left font-bold sm:text-lg">
+          </h3>
+          <p className="mb-5">{contactEmail}</p>
+          <h3 className="text-md pb-2 text-left font-bold sm:text-lg">
             <Phone className="start mr-4 inline" />
             Phone
-          </h1>
-          <h1>{contactPhoneNumber}</h1>
+          </h3>
+          <p>{contactPhoneNumber}</p>
         </motion.div>
       </div>
     </div>

@@ -28,7 +28,7 @@ export function Home() {
       >
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
-          <h1 className="text-center font-sans text-5xl font-bold sm:text-7xl">
+          <p className="text-center font-sans text-5xl font-bold sm:text-7xl">
             <TypingAnimation
               words={homeNameOptions}
               showCursor={true}
@@ -39,11 +39,11 @@ export function Home() {
               typeSpeed={50}
               loop
             />
-          </h1>
-          <h1 className="text-center font-sans text-xl sm:text-3xl">
+          </p>
+          <p className="text-center font-sans text-xl sm:text-3xl">
             I am a
             <WordRotate className="font-bold" words={homeJobOptions} />
-          </h1>
+          </p>
         </div>
         <div className="flex flex-row justify-center gap-3">
           <Button className="rounded-md border border-slate-300 bg-white text-black transition-transform duration-200 hover:scale-110 active:scale-95">

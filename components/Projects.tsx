@@ -13,7 +13,7 @@ export function Projects() {
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
+          <h2 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
               words={projectTitleOptions}
               showCursor={true}
@@ -24,7 +24,7 @@ export function Projects() {
               typeSpeed={50}
               loop
             />
-          </h1>
+          </h2>
         </motion.div>
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.75 }}

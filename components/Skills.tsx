@@ -14,7 +14,7 @@ export function Skills() {
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
+          <h2 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
               words={skillTitleOptions}
               showCursor={true}
@@ -25,7 +25,7 @@ export function Skills() {
               typeSpeed={50}
               loop
             />
-          </h1>
+          </h2>
         </motion.div>
         <motion.div
           initial={{ x: "-25vh", opacity: 0, scale: 0.75 }}
@@ -38,7 +38,7 @@ export function Skills() {
         >
           {skillsSection.map(({ type, skills }) => (
             <div className="flex flex-col gap-5" key={type}>
-              <h1 className="text-xl font-bold sm:text-2xl">{type}</h1>
+              <h3 className="text-xl font-bold sm:text-2xl">{type}</h3>
               <div className="flex flex-row flex-wrap gap-4 lg:gap-6">
                 {skills.map((skill) => (
                   <Badge

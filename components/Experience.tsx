@@ -24,7 +24,7 @@ export function Experience() {
           transition={{ type: "spring", stiffness: 50, damping: 20 }}
           viewport={{ once: true }}
         >
-          <h1 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
+          <h2 className="pb-8 text-center text-3xl font-bold sm:text-4xl">
             <TypingAnimation
               words={experienceTitleOptions}
               showCursor={true}
@@ -35,7 +35,7 @@ export function Experience() {
               typeSpeed={50}
               loop
             />
-          </h1>
+          </h2>
         </motion.div>
         <Accordion type="single" collapsible className="max-w-5xl">
           <motion.div
@@ -51,16 +51,16 @@ export function Experience() {
                 <AccordionTrigger className="w-full">
                   <div className="flex w-full flex-row items-end justify-between gap-4">
                     <div className="flex flex-col">
-                      <h1 className="text-xl font-bold sm:text-2xl">
+                      <h3 className="text-xl font-bold sm:text-2xl">
                         {job.jobTitle}
-                      </h1>
-                      <h1 className="text-md text-muted-foreground sm:text-lg">
+                      </h3>
+                      <h4 className="text-md text-muted-foreground sm:text-lg">
                         {job.company}
-                      </h1>
+                      </h4>
                     </div>
-                    <h1 className="text-md font-medium whitespace-nowrap text-muted-foreground sm:text-lg">
+                    <h4 className="text-md font-medium whitespace-nowrap text-muted-foreground sm:text-lg">
                       {job.date}
-                    </h1>
+                    </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-md flex h-fit flex-row flex-wrap items-center sm:text-lg lg:flex-nowrap lg:gap-5">

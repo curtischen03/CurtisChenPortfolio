@@ -13,10 +13,10 @@ export function Footer() {
       <div className="flex flex-col gap-6 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h1 className="font-bold">
+            <h2 className="font-bold">
               <Globe className="start mr-3 inline" />
               {footerName}
-            </h1>
+            </h2>
           </div>
           <div className="flex items-center">
             {footerSocialLinks.map(({ href, label, icon }) => (
