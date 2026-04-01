@@ -7,6 +7,7 @@ export default function Cards() {
   }, [])
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center gap-20 bg-slate-950 py-20">
+      {/* @ts-ignore */}
       <hover-tilt
         shadow="true"
         scale-factor="1.1"
@@ -21,8 +22,10 @@ export default function Cards() {
           alt="Pokémon"
           className="w-[300px] rounded-[inherit] sm:w-[400px]"
         />
+        {/* @ts-ignore */}
       </hover-tilt>
 
+      {/* @ts-ignore */}
       <hover-tilt
         shadow="true"
         scale-factor="1.1"
@@ -38,6 +41,7 @@ export default function Cards() {
           loading="lazy"
           className="w-[300px] rounded-[inherit] sm:w-[400px]"
         />
+        {/* @ts-ignore */}
       </hover-tilt>
 
       <style>{`
