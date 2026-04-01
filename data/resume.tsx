@@ -43,11 +43,12 @@ export const experienceSection = [
   {
     jobTitle: "Full Stack Developer",
     company: "Koios Enterprises, Calabasas, CA",
-    date: "Oct 2025 – Present",
-    description: `Integrated backend services with frontend using Typescript and React to deliver 3+ microservices, including social media, vendor application, and user settings.
-Translated 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
-Coordinated requirements with business analysts, designers, stakeholders, and backend developers via Jira.
-Built an in-house React component library and UI system for major features.`,
+    date: "Sep 2025 – April 2026",
+    description: `Integrate backend services with frontend using Typescript and React to deliver 3+ microservices,
+including social media, vendor applications, and user settings.
+Develop 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
+Build in-house React component library for major features, reducing frontend development time by 15%.
+Coordinate end to end technical requirements with stakeholders, designers, and engineers via Jira.`,
     youtubeVideo: {
       videoSrc: "https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG",
       thumbnailSrc: "thumbnail.png",
@@ -56,12 +57,13 @@ Built an in-house React component library and UI system for major features.`,
   },
   {
     jobTitle: "Full Stack Developer",
-    company: "UC Berkeley Water Polo, Berkeley, CA",
-    date: "Nov 2025 – Present",
-    description: `Developed mobile responsive pages using Mantine UI, React, and Next.js with Typescript.
-Implemented 10+ custom themed components by translating stakeholder vision into functional code.
-Designed a PostgreSQL database in Supabase to manage 30+ athlete profiles and real-time game results.
-Implemented efficient data fetching for the team's public-facing dashboard.`,
+    company: "UC Berkeley Water Polo Club, Berkeley, CA",
+    date: "Nov 2025 – Feb 2026",
+    description: `Develop mobile friendly pages with React, Next.js, TailwindCSS, and ShadCN on Typescript.
+Implement 10+ custom themed components by translating stakeholder vision into functional code.
+Design a PostgreSQL database in Supabase to manage a roster of 30+ athlete profiles and real time
+game results, implementing efficient data fetching for the team's public facing dashboard.
+`,
     externalLink: {
       src: "https://berkeleywpc.com/",
       label: "UC Berkeley Water Polo Club Website",
@@ -71,8 +73,8 @@ Implemented efficient data fetching for the team's public-facing dashboard.`,
     jobTitle: "Tutoring Chair",
     company: "UCLA Computer Science Department, Los Angeles, CA",
     date: "Sep 2022 – Sep 2025",
-    description: `Led 200+ student review sessions for data structures, algorithms, machine learning, AI, and databases.
-Mentored 50+ students individually, improving average grades by 10% in core CS courses.`,
+    description: `Lead 200+ student review sessions for data structures, algorithms, ML, AI, and databases,
+communicating complex technical concepts.`,
   },
 ]
 export const experienceTitleOptions = ["Experience"]
@@ -313,7 +315,7 @@ export const projectSection = [
     href: "https://quizai-nextjs.vercel.app/",
     title: "Quiz AI",
     description:
-      "Intelligent fullstack web app that allows users to generate quizzes based on chosen topic and number rof questions, take quizzes, and share with others",
+      "Fullstack web app that allows users to generate quizzes based on chosen topic and number of questions, take quizzes, and share with others",
     dates: "December 2025",
     tags: [
       "React",
@@ -341,7 +343,7 @@ export const projectSection = [
     href: "https://job-dashboard-silk.vercel.app/",
     title: "Job Dashboard",
     description:
-      "Fullstack web app that simplifies job search process for developers by providing a daily curated list of full stack positions, tracking user application progress, and displaying visual insights and stats",
+      "Fullstack web app that simplifies job search process for developers by providing a daily curated list of full stack positions, tracking user application progress via user account, and displaying visual insights and stats",
     dates: "February 2026",
     tags: [
       "React",
