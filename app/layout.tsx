@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/context/ThemeProvider"
 import { cn } from "@/lib/utils"
 import { ActiveSectionProvider } from "@/context/ActiveSectionProvider"
 import { tabName, tabIconSrc, metaDescription } from "@/data/resume"
+import { Analytics } from "@vercel/analytics/next"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <ActiveSectionProvider>{children}</ActiveSectionProvider>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
