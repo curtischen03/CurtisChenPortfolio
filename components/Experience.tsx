@@ -74,7 +74,7 @@ export function Experience() {
                     )}
                     {job.youtubeVideo && (
                       <HeroVideoDialog
-                        className="min-w-xs lg:mx-4 lg:max-w-lg"
+                        className="sm:min-w-xs lg:mx-4 lg:max-w-lg"
                         animationStyle="from-center"
                         videoSrc={job.youtubeVideo.videoSrc}
                         thumbnailSrc={job.youtubeVideo.thumbnailSrc}
