@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-A sleek, responsive, and highly customizable portfolio template built with the modern web stack. Designed for developers who want a professional online presence without the hassle of complex configurations.
+A sleek, responsive, and highly customizable portfolio template built with the modern web stack. Designed for developers who want a professional online presence without the hassle of complex configurations. Please star if you like it as a template!
 
 ## Features
 
