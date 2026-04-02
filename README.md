@@ -11,13 +11,7 @@ A sleek, responsive, and highly customizable portfolio template built with the m
 - **Easy Customization:** Centralized data management via a single configuration file.
 
 ## Tech Stack
-
-- **Framework:** [Next.js](https://nextjs.org/) (App Router)
-- **Library:** [React](https://reactjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Components:** [ShadCn UI](https://ui.shadcn.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Shadcn/UI](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ## Getting Started
 
