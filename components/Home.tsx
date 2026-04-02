@@ -17,7 +17,7 @@ export function Home() {
   return (
     <div
       id="home"
-      className="flex min-h-dvh flex-row items-center justify-center gap-15 bg-gray-100 px-4 dark:bg-gray-900"
+      className="flex min-h-dvh flex-row items-center justify-center gap-15 bg-radial from-gray-300 via-neutral-100 to-white px-4 dark:bg-radial dark:from-gray-800 dark:via-neutral-900 dark:to-black"
     >
       {/* left */}
       <motion.div
@@ -29,16 +29,9 @@ export function Home() {
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h2 className="text-center font-sans text-5xl font-bold sm:text-7xl">
-            <TypingAnimation
-              words={homeNameOptions}
-              showCursor={true}
-              blinkCursor={true}
-              pauseDelay={2000}
-              cursorStyle="line"
-              auroraText={true}
-              typeSpeed={50}
-              loop
-            />
+            <div className="shimmer shimmer-color-amber-50 dark:text-white dark:shimmer-color-olive-400">
+              Curtis
+            </div>
           </h2>
           <h2 className="text-center font-sans text-xl sm:text-3xl">
             I am a
