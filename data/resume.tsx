@@ -379,7 +379,7 @@ export const projectSection = [
     links: [
       {
         type: "Source",
-        href: "https://github.com/curtischen03/JobDashboard",
+        href: "https://github.com/curtischen03/EMG-Signal-Machine-Learning",
         icon: <Github className="size-3" />,
       },
     ],
