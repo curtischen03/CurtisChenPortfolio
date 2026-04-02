@@ -44,11 +44,18 @@ export const experienceSection = [
     jobTitle: "Full Stack Developer",
     company: "Koios Enterprises, Calabasas, CA",
     date: "Sep 2025 – April 2026",
-    description: `Integrate backend services with frontend using Typescript and React to deliver 3+ microservices,
-including social media, vendor applications, and user settings.
-Develop 40+ Figma designs into responsive, visually polished, and accessibility compliant pages.
-Build in-house React component library for major features, reducing frontend development time by 15%.
-Coordinate end to end technical requirements with stakeholders, designers, and engineers via Jira.`,
+    description: (
+      <>
+        Integrate backend services with frontend using <b>Typescript</b> and{" "}
+        <b>React</b> to deliver 3+ microservices, including social media, vendor
+        applications, and user settings. Develop 40+ <b>Figma</b> designs into
+        responsive, visually polished, and accessibility compliant pages. Build
+        in-house <b>React</b> component library for major features, reducing
+        frontend development time by 15%. Coordinate end to end technical
+        requirements with stakeholders, designers, and engineers via <b>Jira</b>
+        .
+      </>
+    ),
     youtubeVideo: {
       videoSrc: "https://www.youtube.com/embed/h1n7tztyCpw?si=PXiAfRNTjjSR8ihG",
       thumbnailSrc: "thumbnail.png",
@@ -59,11 +66,17 @@ Coordinate end to end technical requirements with stakeholders, designers, and e
     jobTitle: "Full Stack Developer",
     company: "UC Berkeley Water Polo Club, Berkeley, CA",
     date: "Nov 2025 – Feb 2026",
-    description: `Develop mobile friendly pages with React, Next.js, TailwindCSS, and ShadCN on Typescript.
-Implement 10+ custom themed components by translating stakeholder vision into functional code.
-Design a PostgreSQL database in Supabase to manage a roster of 30+ athlete profiles and real time
-game results, implementing efficient data fetching for the team's public facing dashboard.
-`,
+    description: (
+      <>
+        Develop mobile friendly pages with <b>React</b>, <b>Next.js</b>,{" "}
+        <b>TailwindCSS</b>, and <b>ShadCN</b> on <b>Typescript</b>. Implement
+        10+ custom themed components by translating stakeholder vision into
+        functional code. Design a <b>PostgreSQL</b> database in <b>Supabase</b>{" "}
+        to manage a roster of 30+ athlete profiles and real time game results,
+        implementing efficient data fetching for the team's public facing
+        dashboard.
+      </>
+    ),
     externalLink: {
       src: "https://berkeleywpc.com/",
       label: "UC Berkeley Water Polo Club Website",
