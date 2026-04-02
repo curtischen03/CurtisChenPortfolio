@@ -44,7 +44,7 @@ export function Skills() {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="text-md flex items-center justify-center px-4 py-5 sm:text-lg lg:px-5 lg:py-6"
+                    className="text-md flex items-center justify-center px-4 py-5 hover:shimmer sm:text-lg lg:px-5 lg:py-6 hover:dark:shimmer-color-gray-400"
                   >
                     {skill in skillsIcons ? skillsIcons[skill] : null}
                     {skill}

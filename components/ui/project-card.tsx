@@ -128,7 +128,7 @@ export function ProjectCard({
             {tags.map((tag) => (
               <Badge
                 key={tag}
-                className="h-6 w-fit border border-border px-2 text-[11px] font-medium"
+                className="!sm:text-lg h-6 w-fit border border-border px-2 !text-[11px] hover:shimmer hover:dark:shimmer-color-gray-400"
                 variant="outline"
               >
                 {tag}

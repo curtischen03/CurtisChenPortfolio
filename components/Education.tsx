@@ -74,7 +74,7 @@ export function Education() {
                         {school.coursework.map((course) => (
                           <Badge
                             variant="secondary"
-                            className="text-md px-3 py-4 sm:text-lg"
+                            className="text-md hover:shimmer-bg px-3 py-4 hover:shimmer sm:text-lg hover:dark:shimmer-color-gray-400"
                             key={course}
                           >
                             {course}

@@ -29,8 +29,8 @@ export function Home() {
         <div className="flex flex-col gap-3">
           <h1 className="text-center font-sans text-xl sm:text-3xl">Hi, I'm</h1>
           <h2 className="text-center font-sans text-5xl font-bold sm:text-7xl">
-            <div className="shimmer shimmer-color-amber-50 dark:text-white dark:shimmer-color-olive-400">
-              Curtis
+            <div className="shimmer shimmer-color-amber-50 dark:text-gray-400 dark:shimmer-color-amber-50">
+              {homeNameOptions[0]}
             </div>
           </h2>
           <h2 className="text-center font-sans text-xl sm:text-3xl">
