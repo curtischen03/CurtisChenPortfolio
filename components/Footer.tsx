@@ -14,7 +14,13 @@ export function Footer() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <h2 className="font-bold">
-              <Globe className="start mr-3 inline" />
+              <img
+                alt="shaban"
+                className="start mr-3 inline size-4 rounded-full"
+                height="auto"
+                src="https://github.com/shabanhr.png"
+                width="auto"
+              />{" "}
               {footerName}
             </h2>
           </div>
@@ -53,7 +59,7 @@ export function Footer() {
         <p className="inline-flex items-center gap-1">
           <span>Built by</span>
           <a
-            aria-label="x/twitter"
+            aria-label="Link to Github profile"
             className="inline-flex items-center gap-1 text-foreground/80 hover:text-foreground hover:underline"
             href={footerGithub}
             rel="noreferrer"

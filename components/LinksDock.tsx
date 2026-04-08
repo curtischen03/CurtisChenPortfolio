@@ -33,6 +33,7 @@ export function LinksDock() {
                 <TooltipTrigger asChild className="sm:m-2 sm:size-full">
                   <a
                     href={url}
+                    aria-label={`Link to ${name}`}
                     target="_blank"
                     rel="noreferrer"
                     className="flex h-full w-full items-center justify-center"

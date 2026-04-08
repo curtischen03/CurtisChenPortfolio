@@ -173,49 +173,57 @@ export const skillsIcons: Record<string, React.ReactNode> = {
   Python: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Python Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
     />
   ),
   Typescript: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Typescript Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     />
   ),
   Javascript: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Javascript Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
     />
   ),
   "C++": (
     <img
       className="mr-1 h-6 w-6"
+      alt="C++ Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
     />
   ),
   Java: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Java Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
     />
   ),
   React: (
     <img
       className="mr-1 h-6 w-6"
+      alt="React Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
     />
   ),
   TailwindCss: (
     <img
       className="mr-1 h-6 w-6"
+      alt="TailwindCss Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
     />
   ),
-  ShadCn: <img className="mr-1 h-6 w-6" src="shadcn.png" />,
+  ShadCn: <img className="mr-1 h-6 w-6" alt="ShadCn Icon" src="shadcn.png" />,
   "Next.js": (
     <img
       className="mr-1 h-6 w-6"
+      alt="Next.js Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
     />
   ),
@@ -228,78 +236,91 @@ export const skillsIcons: Record<string, React.ReactNode> = {
   SQL: (
     <img
       className="mr-1 h-6 w-6"
+      alt="SQL Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
     />
   ),
   Supabase: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Supabase Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
     />
   ),
   Firebase: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Firebase Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
     />
   ),
   "Express.js": (
     <img
       className="mr-1 h-6 w-6"
+      alt="Express.js Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
     />
   ),
   PostgreSql: (
     <img
       className="mr-1 h-6 w-6"
+      alt="PostgreSql Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
     />
   ),
   "Node.js": (
     <img
       className="mr-1 h-6 w-6"
+      alt="Node.js Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
     />
   ),
   Docker: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Docker Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
     />
   ),
   PyTorch: (
     <img
       className="mr-1 h-6 w-6"
+      alt="PyTorch Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
     />
   ),
   TensorFlow: (
     <img
       className="mr-1 h-6 w-6"
+      alt="TensorFlow Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
     />
   ),
   OpenCv: (
     <img
       className="mr-1 h-6 w-6"
+      alt="OpenCv Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
     />
   ),
   Pandas: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Pandas Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
     />
   ),
   MatPlotLib: (
     <img
       className="mr-1 h-6 w-6"
+      alt="MatPlotLib Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
     />
   ),
   Git: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Git Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
     />
   ),
@@ -311,12 +332,14 @@ export const skillsIcons: Record<string, React.ReactNode> = {
   BitBucket: (
     <img
       className="mr-1 h-6 w-6"
+      alt="BitBucket Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg"
     />
   ),
   Jira: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Jira Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
     />
   ),
