@@ -230,6 +230,7 @@ export const skillsIcons: Record<string, React.ReactNode> = {
   Bootstrap: (
     <img
       className="mr-1 h-6 w-6"
+      alt="Bootstrap Icon"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
     />
   ),
