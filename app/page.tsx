@@ -1,4 +1,3 @@
-"use client"
 import { Header } from "@/components/Header"
 import { Home } from "@/components/Home"
 import { Experience } from "@/components/Experience"
