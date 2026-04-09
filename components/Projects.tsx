@@ -1,3 +1,4 @@
+"use client"
 import { TypingAnimation } from "./ui/typing-animation"
 import { ProjectCard } from "@/components/ui/project-card"
 import { projectSection, projectTitleOptions } from "@/data/resume"

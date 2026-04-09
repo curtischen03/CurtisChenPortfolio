@@ -1,3 +1,4 @@
+"use client"
 import { TypingAnimation } from "./ui/typing-animation"
 import { Mail, Phone } from "lucide-react"
 import { LazyMotion, domAnimation, m } from "framer-motion"
