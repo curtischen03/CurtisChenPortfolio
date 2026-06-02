@@ -16,7 +16,7 @@ export function Home() {
   return (
     <div
       id="home"
-      className="flex min-h-dvh flex-row items-center justify-center gap-15 bg-radial from-gray-300 via-neutral-100 to-white px-4 dark:bg-radial dark:from-gray-800 dark:via-neutral-900 dark:to-black"
+      className="flex min-h-dvh flex-row items-center justify-center gap-15 px-4"
     >
       {/* left */}
       <LazyMotion features={domAnimation}>
